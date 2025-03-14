@@ -10,12 +10,12 @@
 
 #### /all-student-name
 - **View Results Table**
-  ![View Results Table](img1.png)
+  ![View Results Table](https://cdn.discordapp.com/attachments/916932753897967666/1350089104389574697/image.png?ex=67d577f5&is=67d42675&hm=9414645cb7eb8f3b5b761d0c49efc5f2f8e1c669a52f286ccd182ce35bf20680&)
 
 
 #### /highest-gpa
 - **View Results Table**
-  ![View Results Table](img2.png)
+  ![View Results Table](https://cdn.discordapp.com/attachments/916932753897967666/1350089486620561450/image.png?ex=67d57851&is=67d426d1&hm=0bb761f92b4d409f7178e4b2b2a7a1e07abad5bca6fe6851457d85ac466eb97a&)
 
 
 ### Test Results (Via CLI)
