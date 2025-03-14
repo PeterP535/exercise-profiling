@@ -84,3 +84,33 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1741666637098,89,highest gpa request,200,,Thread Group 1-10,text,true,,275,127,1,1,http://localhost:8080/highest-gpa,89,0,1
 ```
 
+# Kesimpulan
+Setelah dilakukan optimasi, waktu eksekusi profil yang diukur mengalami peningkatan yang signifikan. Peningkatan ini menunjukkan efektivitas dari optimasi yang diterapkan, sehingga menghasilkan kinerja dan efisiensi aplikasi yang lebih baik.
+
+# Refleksi
+
+### Apa perbedaan antara pendekatan pengujian performa dengan JMeter dan pemprofilan dengan IntelliJ Profiler dalam konteks optimasi performa aplikasi?
+Pengujian performa dengan JMeter berfokus pada simulasi beban pengguna dan mengukur waktu respons aplikasi, throughput, serta tingkat kesalahan dalam berbagai kondisi. Ini membantu mengidentifikasi masalah performa dari perspektif pengguna akhir. Sementara itu, pemprofilan dengan IntelliJ Profiler melibatkan analisis perilaku internal aplikasi, seperti penggunaan CPU, alokasi memori, dan waktu eksekusi metode, untuk mengidentifikasi hambatan performa pada tingkat kode.
+
+### Bagaimana proses pemprofilan membantu Anda dalam mengidentifikasi dan memahami titik lemah dalam aplikasi?
+Pemprofilan memberikan wawasan mendetail tentang perilaku runtime aplikasi, memungkinkan identifikasi jalur kode yang tidak efisien, kebocoran memori, dan operasi yang mengonsumsi sumber daya secara berlebihan. Dengan menganalisis data profil, Anda dapat memahami bagian kode mana yang menghabiskan sumber daya paling banyak dan menyebabkan degradasi performa.
+
+### Apakah IntelliJ Profiler efektif dalam membantu Anda menganalisis dan mengidentifikasi hambatan dalam kode aplikasi Anda?
+Ya, IntelliJ Profiler sangat efektif dalam menganalisis dan mengidentifikasi hambatan performa. Alat ini menyediakan berbagai fitur visualisasi dan pengukuran metrik performa, sehingga memudahkan dalam menemukan dan mengatasi masalah performa pada tingkat kode.
+
+### Apa tantangan utama yang Anda hadapi saat melakukan pengujian performa dan pemprofilan, dan bagaimana Anda mengatasinya?
+Tantangan utama mencakup waktu yang dibutuhkan untuk menyiapkan dan mengakses basis data untuk setiap endpoint karena jumlah data yang besar. Selain itu, variasi lingkungan komputer dan waktu eksekusi dapat menjadi tantangan yang signifikan. Untuk mengatasinya, saya mengoptimalkan kode aplikasi agar waktu yang dibutuhkan untuk menyiapkan dan mengakses basis data lebih singkat. Saya juga menjalankan pengujian JMeter dan IntelliJ Profiler beberapa kali untuk mengakomodasi variasi dan memvalidasi hasilnya.
+
+### Apa manfaat utama yang Anda peroleh dari penggunaan IntelliJ Profiler untuk pemprofilan kode aplikasi?
+Manfaat utama meliputi kemampuan untuk mengidentifikasi dan memperbaiki hambatan performa, mengoptimalkan penggunaan sumber daya, dan meningkatkan efisiensi aplikasi secara keseluruhan. Integrasi IntelliJ Profiler dengan lingkungan pengembangan juga memperlancar proses pemprofilan, menjadikannya lebih mudah diakses dan digunakan.
+
+### Bagaimana Anda menangani situasi di mana hasil pemprofilan dengan IntelliJ Profiler tidak sepenuhnya konsisten dengan temuan dari pengujian performa menggunakan JMeter?
+Tentu saja, hasilnya bisa bervariasi karena perbedaan metodologi dalam pengujian dan pemprofilan. Pengujian performa dengan JMeter mensimulasikan beban pengguna dan mengukur waktu respons, throughput, serta tingkat kesalahan, memberikan pandangan makro tentang performa aplikasi dalam berbagai kondisi. Sementara itu, pemprofilan dengan IntelliJ Profiler memberikan analisis yang lebih mendetail tentang perilaku internal aplikasi, seperti penggunaan CPU, alokasi memori, dan waktu eksekusi metode.
+
+Meskipun terdapat perbedaan pendekatan, hasil dari kedua metode ini seharusnya tetap sejalan jika aplikasi berperforma secara konsisten. Ketidaksesuaian mungkin terjadi karena perbedaan lingkungan, konfigurasi pengujian, atau aspek spesifik dari performa yang diukur. Untuk mengatasi perbedaan ini, penting untuk melakukan validasi silang terhadap temuan dari kedua alat, membandingkannya dengan skenario dunia nyata, serta memastikan bahwa setiap optimasi yang dilakukan meningkatkan performa secara menyeluruh tanpa menimbulkan masalah baru.
+
+### Strategi apa yang Anda terapkan dalam mengoptimalkan kode aplikasi setelah menganalisis hasil pengujian performa dan pemprofilan? Bagaimana Anda memastikan bahwa perubahan yang dilakukan tidak mempengaruhi fungsionalitas aplikasi?
+Untuk mengoptimalkan performa aplikasi, saya menggunakan alat seperti JMeter dan IntelliJ Profiler untuk analisis. JMeter mensimulasikan beban pengguna dan mengukur waktu respons, sementara IntelliJ Profiler memberikan wawasan tentang penggunaan CPU dan alokasi memori. Dengan menggunakan alat-alat ini, saya dapat mengidentifikasi hambatan performa dan inefisiensi.
+
+Upaya optimasi saya berfokus pada penghapusan fungsi yang tidak terpakai dan redundant, memastikan bahwa aplikasi berjalan secara efisien tanpa mengorbankan fungsionalitas. Pendekatan ini membantu dalam memahami dan menyelesaikan masalah performa secara efektif.
+
